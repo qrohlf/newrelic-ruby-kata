@@ -34,6 +34,4 @@ class CachingController < ApplicationController
     Rails.cache.write('sin=' + x.to_s,r)
     return r
   end
-
-  add_method_tracer :sin, 'Custom/compute_sine'
 end
